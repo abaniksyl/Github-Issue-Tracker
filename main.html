@@ -37,11 +37,11 @@
                 <div class="flex items-center gap-4">
                     <div class="relative hidden md:flex items-center">
                         <i class="fa-solid fa-magnifying-glass absolute left-3 text-gray-500 z-10"></i>
-                
+
                         <input type="text" placeholder="Search issues..."
                             class="input input-bordered h-10 w-64 bg-slate-50 pl-10 focus:bg-white focus:outline-[#6000FF] border-gray-300" />
                     </div>
-                
+
                     <button
                         class="btn bg-[#6000FF] hover:bg-[#5000D2] border-none text-white px-5 h-10 min-h-[40px] normal-case font-semibold">
                         <i class="fa-solid fa-plus mr-1"></i> New Issue
@@ -50,6 +50,53 @@
             </div>
         </div>
     </header>
+
+    <main class="flex justify-center mt-16 mb-10 px-4">
+        <div class="inline-flex bg-white border border-gray-200 rounded-xl p-4.5 shadow-sm w-full max-w-5xl gap-3">
+            <button
+                class="px-12 py-2.5 rounded-lg bg-[#6000FF] text-white font-semibold text-sm transition-all shadow-md shadow-purple-100 border border-gray-200 g">
+                All
+            </button>
+
+            <button
+                class="px-12 py-2.5 rounded-lg text-gray-500 hover:bg-gray-50 font-medium text-sm transition-all shadow-md shadow-purple-100 border border-gray-200 g">
+                Open
+            </button>
+
+            <button
+                class="px-12 py-2.5 rounded-lg text-gray-500 hover:bg-gray-50 font-medium text-sm transition-all shadow-md shadow-purple-100 border border-gray-200 g">
+                Closed
+            </button>
+        </div>
+    </main>
+    <section class="flex justify-center mb-10 px-4">
+        <div
+            class="flex justify-between items-center bg-white border border-gray-200 rounded-xl p-4.5 shadow-sm w-full max-w-5xl">
+    
+            <div class="flex items-center gap-4">
+                <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center text-[#6000FF]">
+                    <i class="fa-solid fa-circle-nodes text-xl"></i>
+                </div>
+                <div>
+                    <h2 class="text-xl font-bold text-slate-800 leading-tight">50 Issues</h2>
+                    <p class="text-sm text-gray-500">Track and manage your project issues</p>
+                </div>
+            </div>
+    
+            <div class="flex gap-6 pr-4">
+                <div class="flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full"></span>
+                    <span class="text-sm font-bold text-slate-700">Open</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 bg-[#6000FF] rounded-full"></span>
+                    <span class="text-sm font-bold text-slate-700">Closed</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="./script/main.js"></script>
 </body>
 
 </html>
